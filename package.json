@@ -21,8 +21,7 @@
   "bugs": {
     "url": "https://github.com/Zaragg/hello/issues"
   },
-  "homepage": "https://github.com/Zaragg/hello#readme"
-},
+  "homepage": "https://github.com/Zaragg/hello#readme",
   "engines": {
     "node": "10.16.3",
     "npm": "*"
