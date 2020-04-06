@@ -8,4 +8,4 @@ client.on('message', message => {
 		message.channel.send('no u');
 	} 
 });
-client.login('NDUxMTAxODM0MzU5MzQxMDc3.XotwfA._mGgzAklzLcD58we8sJvspwmveg');
+client.login(BOT_TOKEN);
