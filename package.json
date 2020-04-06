@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Zaragg/hello/issues"
   },
-  "homepage": "https://github.com/Zaragg/hello#readme"
+  "homepage": "https://github.com/Zaragg/hello#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
