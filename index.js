@@ -14,7 +14,7 @@ client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
 	  let embed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
-	  .setColor(#FF7878)
+	  .setColor('#FF7878')
 	  .setThumbnail(member.avatarURL)
 
 	  channel.send(embed);
@@ -23,7 +23,7 @@ client.on('guildMemberRemove', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
 	  let embed = new MessageEmbed()
 	  .setDescription(`Goodbye, <@${member.user.id}>.`)
-	  .setColor(#000000)
+	  .setColor('#000000')
 	  .setThumbnail(member.avatarURL)
 
 	  channel.send(embed);
