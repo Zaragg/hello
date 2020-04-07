@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
-	  channel.send('Welcome, ${member}');
+	  channel.send('Welcome, <@${member.user.id}>');
 });
 
 client.login(process.env.BOT_TOKEN);
