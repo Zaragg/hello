@@ -15,7 +15,7 @@ client.on('guildMemberAdd', member => {
 	  let embed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
 	  .setColor(0xff0000)
-	  message.channel.send(embed);
+	  channel.send(embed);
 });
 	  //channel.send(`W`Welcome, <@${member.user.id}>.`
 client.login(process.env.BOT_TOKEN);
