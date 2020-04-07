@@ -15,7 +15,7 @@ client.on('guildMemberAdd', member => {
 	  let embed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
 	  .setColor(0xff0000)
-	  .setThumbnail(member.displayAvatarURL())
+	  .setThumbnail(member.avatarURL)
 
 	  channel.send(embed);
 });
