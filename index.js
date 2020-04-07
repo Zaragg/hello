@@ -14,10 +14,19 @@ client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
 	  let embed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
-	  .setColor(0xff0000)
+	  .setColor(#FF7878)
 	  .setThumbnail(member.avatarURL)
 
 	  channel.send(embed);
 });
-	  //channel.send(`W`Welcome, <@${member.user.id}>.`
+client.on('guildMemberRemove', member => {
+	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
+	  let embed = new MessageEmbed()
+	  .setDescription(`Goodbye, <@${member.user.id}>.`)
+	  .setColor(#000000)
+	  .setThumbnail(member.avatarURL)
+
+	  channel.send(embed);
+});
+	  
 client.login(process.env.BOT_TOKEN);
