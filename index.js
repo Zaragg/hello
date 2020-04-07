@@ -12,7 +12,10 @@ client.on('message', message => {
 });
 client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
-	  channel.send(`Welcome, <@${member.user.id}>`);
-});
+	  let embed = new MessageEmbed()
+	  .setDescription(`Welcome, <@${member.user.id}>.`)
+	  .setColor(0xff0000)
+	  message.channel.send(embed);
 
+	  //channel.send(`W`Welcome, <@${member.user.id}>.`
 client.login(process.env.BOT_TOKEN);
