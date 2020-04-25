@@ -14,6 +14,7 @@ client.on('message', message => {
 	}
 	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
 	if (arr[1] == arr[2] && arr[3] == arr[4]){
+		console.log('spam');
 		message.channel.send('shut the fuck up stop spamming');
 	}
 });
