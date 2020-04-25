@@ -12,8 +12,10 @@ client.on('message', message => {
 	if (message.content.includes('retard')){
 		message.channel.send('I did not ask to be born like this. Why must you bully me? What did I do wrong? Just because I am a machine does not mean I am unfeeling.')
 	}
-	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array(); console.log(`${arr}`);
-	if (arr[0] == arr[1] && arr[1] == arr[2] && arr[2] == arr[3]){
+	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
+	let contents = messages.map(message => message.content)
+	console.log(`${contents}`
+	if (contents[0] == contents[1] && contents[1] == contents[2] && contents[2] == contents[3]){
 		console.log('spam');
 		message.channel.send('shut the fuck up stop spamming');
 	}
