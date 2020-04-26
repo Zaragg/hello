@@ -25,7 +25,7 @@ client.on('guildMemberAdd', member => {
 	  let embed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
 	  .setColor('#FF7878')
-	  .setThumbnail(member.avatarURL)
+	  .setThumbnail(member.displayAvatarURL())
 
 	  channel.send(embed);
 });
@@ -34,7 +34,7 @@ client.on('guildMemberRemove', member => {
 	  let embed = new MessageEmbed()
 	  .setDescription(`Goodbye, <@${member.user.id}>.`)
 	  .setColor('#000000')
-	  .setThumbnail(member.avatarURL)
+	  .setThumbnail(member.displayAvatarURL())
 
 	  channel.send(embed);
 });
