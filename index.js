@@ -10,7 +10,7 @@ client.on('message', message => {
 		message.channel.send('no u');
 	} 
 	if (message.content.includes('retard')){
-		message.channel.send('I did not ask to be born like this. Why must you bully me? What did I do wrong? Just because I am a machine does not mean I am unfeeling.')
+		message.channel.send('yes?')
 	}
 	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
 	let contents = messages.map(message => message.content);
