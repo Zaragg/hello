@@ -21,24 +21,24 @@ client.on('message', message => {
 });
 });
 client.on('guildMemberAdd', member => {
-	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
+	  const channel = member.guild.channels.cache.find(ch => ch.id === '578364203090575362');
 	  let jembed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
 	  .setColor('#FF7878')
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(jembed);
-	  client.users.fetch(member.guild.ownerID).send(`${member} has joined.`);
+	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has joined.`);
 });
 client.on('guildMemberRemove', member => {
-	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
+	  const channel = member.guild.channels.cache.find(ch => ch.id === '578364203090575362');
 	  let lembed = new MessageEmbed()
 	  .setDescription(`Goodbye, <@${member.user.id}>.`)
 	  .setColor('#000000')
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(lembed);
-	  client.users.fetch(member.guild.ownerID).send(`${member} has left.`);
+	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has left.`);
 });
 	  
 client.login(process.env.BOT_TOKEN);
