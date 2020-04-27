@@ -28,7 +28,6 @@ client.on('guildMemberAdd', member => {
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(jembed);
-	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has joined.`);
 });
 client.on('guildMemberRemove', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '578364203090575362');
@@ -38,7 +37,7 @@ client.on('guildMemberRemove', member => {
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(lembed);
-	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has left.`);
+	 
 });
 	  
 client.login(process.env.BOT_TOKEN);
