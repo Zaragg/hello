@@ -28,7 +28,7 @@ client.on('guildMemberAdd', member => {
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(embed);
-	  client.users.cache.get(member.guild.ownerID).send(`${member} has joined.`);
+	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has joined.`);
 });
 client.on('guildMemberRemove', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
