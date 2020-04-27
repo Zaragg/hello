@@ -9,7 +9,7 @@ client.on('message', message => {
 	if (message.content === 'nigger'){
 		message.channel.send('no u');
 	} 
-	if (message.content.includes('retard') && message.content != 'retarded' && message.content != 'retards'){
+	if (message.content == 'retard'){
 		message.channel.send('yes?')
 	}
 	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
