@@ -22,22 +22,22 @@ client.on('message', message => {
 });
 client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
-	  let embed = new MessageEmbed()
+	  let jembed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>.`)
 	  .setColor('#FF7878')
 	  .setThumbnail(member.user.displayAvatarURL())
 
-	  channel.send(embed);
+	  channel.send(jembed);
 	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has joined.`);
 });
 client.on('guildMemberRemove', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
-	  let embed = new MessageEmbed()
+	  let lembed = new MessageEmbed()
 	  .setDescription(`Goodbye, <@${member.user.id}>.`)
 	  .setColor('#000000')
 	  .setThumbnail(member.user.displayAvatarURL())
 
-	  channel.send(embed);
+	  channel.send(lembed);
 	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has left.`);
 });
 	  
