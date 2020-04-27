@@ -38,6 +38,7 @@ client.on('guildMemberRemove', member => {
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(embed);
+	  client.users.cache.fetch(member.guild.ownerID).send(`${member} has left.`);
 });
 	  
 client.login(process.env.BOT_TOKEN);
