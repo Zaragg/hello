@@ -29,8 +29,8 @@ client.on('guildMemberAdd', member => {
 
 	  channel.send(jembed);
 	  client.users.cache.get(member.guild.ownerID).send(`${member} has joined.`);
-	  let defaultRole = member.guild.roles.cache.fetch("492817843214221313");
-	  let botRole = member.guild.roles.cache.fetch("492808098621423616");
+	  let defaultRole = member.guild.roles.cache.get("492817843214221313");
+	  let botRole = member.guild.roles.cache.get("492808098621423616");
 	  if (!member.user.bot){
 		  member.addRole(defaultRole);
 	  }
