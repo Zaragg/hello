@@ -32,9 +32,9 @@ client.on('guildMemberAdd', member => {
 	  let defaultRole = member.guild.roles.cache.get("492817843214221313");
 	  let botRole = member.guild.roles.cache.get("492808098621423616");
 	  if (!member.user.bot){
-		  member.addRole(defaultRole);
+		  member.roles.add(defaultRole);
 	  }
-	  member.roles.addRole(botRole);
+	  member.roles.add(botRole);
 
 
 });
