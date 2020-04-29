@@ -34,7 +34,7 @@ client.on('guildMemberAdd', member => {
 	  if (!member.user.bot){
 		  member.addRole(defaultRole);
 	  }
-	  member.addRole(botRole);
+	  member.roles.addRole(botRole);
 
 
 });
