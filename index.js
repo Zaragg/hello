@@ -30,7 +30,7 @@ client.on('message', message => {
 		message.delete()
 		.then(msg => console.log(`Deleted message`))
 		.catch(console.error);
-		
+		message.channel.send('Yawn on my dick asshole.')
 	}
 });
 });
