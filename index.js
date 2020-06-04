@@ -20,7 +20,9 @@ client.on('message', message => {
 	}
 	if(message.attachments.size == 0){
 		if(message.MessageAttachment.name == '657716015471525899.png'){
-			message.delete();
+			message.delete()
+			.then(msg => console.log(`Deleted message from ${msg.author.username}`))
+			.catch(console.error);
 		}
 	}
 });
