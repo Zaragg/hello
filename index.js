@@ -22,8 +22,8 @@ client.on('message', message => {
 		if(message.attachments.array()[0].name == '657716015471525899.png'){
 			message.delete()
 			.then(msg => console.log(`Deleted message`))
-			.then(message.channel.send("Fuck off Dweeb."))
 			.catch(console.error);
+			message.channel.send("Fuck off Dweeb.");
 		}
 	}
 	if(message.content.contains(':yawn:') && message.author.id == '399703132189360129'){
