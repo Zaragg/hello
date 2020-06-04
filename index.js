@@ -23,13 +23,11 @@ client.on('message', message => {
 			message.delete()
 			.then(msg => console.log(`Deleted message`))
 			.catch(console.error);
-			message.channel.send("Fuck off Dweeb.");
 		}
 	}
 	if(message.content.contains(':yawn:') && message.author.id == '399703132189360129'){
 		message.delete()
 		.then(msg => console.log(`Deleted message`))
-		.then(message.channel.send("Fuck off Dweeb."))
 		.catch(console.error);
 		
 	}
