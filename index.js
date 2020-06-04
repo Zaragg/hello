@@ -18,6 +18,11 @@ client.on('message', message => {
 		console.log('spam');
 		message.channel.send('shut the fuck up stop spamming');
 	}
+	if(message.attachments.size == 0){
+		if(message.MessageAttachment.name == '657716015471525899.png'){
+			message.delete();
+		}
+	}
 });
 });
 client.on('guildMemberAdd', member => {
