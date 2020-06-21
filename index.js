@@ -19,7 +19,7 @@ client.on('message', message => {
 		message.channel.send('shut the fuck up stop spamming');
 	}
 	if(message.attachments.size == 1){
-		if(message.attachments.array()[0].name == '657716015471525899.png'){
+		if(message.attachments.array()[0].name == '657716015471525899.png' || message.attachments.array()[0].name == 'peez.png'){
 			message.delete()
 			.then(msg => console.log(`Deleted message`))
 			.catch(console.error);
