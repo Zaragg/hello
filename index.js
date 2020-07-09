@@ -37,7 +37,7 @@ client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
 	  let jembed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>. Be sure to head to #rule-n-colors to pick a color and read our singular rule.`)
-	  .setColor('#FF7878')
+	  .setColor('#91ffba')
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(jembed);
@@ -52,7 +52,7 @@ client.on('guildMemberRemove', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
 	  let lembed = new MessageEmbed()
 	  .setDescription(`Goodbye, <@${member.user.id}>.`)
-	  .setColor('#000000')
+	  .setColor('#557061')
 	  .setThumbnail(member.user.displayAvatarURL())
 
 	  channel.send(lembed);
