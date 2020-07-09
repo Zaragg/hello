@@ -36,7 +36,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
 	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
 	  let jembed = new MessageEmbed()
-	  .setDescription(`Welcome, <@${member.user.id}>.`)
+	  .setDescription(`Welcome, <@${member.user.id}>. Be sure to head to #rule-n-colors to pick a color and read our singular rule.`)
 	  .setColor('#FF7878')
 	  .setThumbnail(member.user.displayAvatarURL())
 
