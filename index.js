@@ -17,20 +17,8 @@ client.on('message', message => {
 		console.log('spam');
 		message.channel.send('shut the fuck up stop spamming');
 	}
-	if(message.attachments.size == 1){
-		if(message.attachments.array()[0].name == '657716015471525899.png' || message.attachments.array()[0].name == 'peez.png'){
-			message.delete()
-			.then(msg => console.log(`Deleted message`))
-			.catch(console.error);
-			message.channel.send('Die Dweeb.')
-		}
-	}
-	if(message.content.includes(':yawning_face:') && message.author.id == '399703132189360129'){
-		message.delete()
-		.then(msg => console.log(`Deleted message`))
-		.catch(console.error);
-		message.channel.send('Yawn on my dick asshole.');
-	}
+
+
 });
 });
 client.on('guildMemberAdd', member => {
