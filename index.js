@@ -35,7 +35,7 @@ client.on('message', message => {
 });
 client.on('guildMemberAdd', member => {
 	console.log('User joined');
-	  const channel = member.guild.channels.cache.find(ch => ch.id === '492801248492519444');
+	  const channel = member.guild.channels.cache.find(ch => ch.id === '578364203090575362');
 	  let jembed = new MessageEmbed()
 	  .setDescription(`Welcome, <@${member.user.id}>. Be sure to head to #rule-n-colors to pick a color and read our singular rule.`)
 	  .setColor('#91ffba')
