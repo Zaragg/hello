@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^12.1.1",
+    "discord.js": "^12.4.1",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {},
@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": "https://github.com/Zaragg/hello/issues"
+    "url": "https://github.com/Zaragg/hello/issues"
   },
   "engines": {
     "node": "12.x",
