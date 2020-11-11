@@ -43,7 +43,6 @@ client.on('guildMemberRemove', member => {
 	  .setDescription(`Goodbye, <@${member.user.id}>.`)
 	  .setColor('#557061')
 	  .setThumbnail(member.user.displayAvatarURL())
-	  if (!channel) return;
 	  channel.send(lembed);
 	  client.users.cache.get(member.guild.ownerID).send(`${member} has left.`);
 
