@@ -10,6 +10,12 @@ client.on('message', message => {
 	if (message.content == 'retard'){
 		message.channel.send('yes?')
 	}
+	if (message.content == 'goodnight' || message.content == 'Goodnight' || message.content == 'good night'){
+		message.channel.send(`Goodnight <@${message.author.id}>`)
+	}
+	if (message.content == 'goodmorning' || message.content == 'Goodmorning' || message.content == 'good morning'){
+		message.channel.send(`Good morning <@${message.author.id}>`)
+	}
 	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
 	let contents = messages.map(message => message.content);
 	if (contents[0] == contents[1] && contents[1] == contents[2] && contents[2] == contents[3]){
