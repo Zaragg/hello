@@ -21,7 +21,7 @@ client.on('message', message => {
 // 	if (contents[0] == contents[1] && contents[1] == contents[2] && contents[2] == contents[3]){
 // 		if (message.author.bot){return;}
 // 		console.log('spam');
-// 		message.channel.send('shut the fuck up stop spamming');
+// 		message.channel.send('shut the fuck up stop');
 // 	}
 
 
