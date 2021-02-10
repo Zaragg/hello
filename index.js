@@ -16,16 +16,16 @@ client.on('message', message => {
 	if (message.content == 'goodmorning' || message.content == 'Goodmorning' || message.content == 'good morning'){
 		message.channel.send(`Good morning <@${message.author.id}>`)
 	}
-	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
-	let contents = messages.map(message => message.content);
-	if (contents[0] == contents[1] && contents[1] == contents[2] && contents[2] == contents[3]){
-		if (message.author.bot){return;}
-		console.log('spam');
-		message.channel.send('shut the fuck up stop spamming');
-	}
+// 	message.channel.messages.fetch({ limit: 4 }).then(messages =>{let arr = messages.array();
+// 	let contents = messages.map(message => message.content);
+// 	if (contents[0] == contents[1] && contents[1] == contents[2] && contents[2] == contents[3]){
+// 		if (message.author.bot){return;}
+// 		console.log('spam');
+// 		message.channel.send('shut the fuck up stop spamming');
+// 	}
 
 
-});
+// });
 });
 client.on('guildMemberAdd', member => {
 	console.log('User joined');
