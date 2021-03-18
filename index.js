@@ -3,7 +3,6 @@ const {Client, MessageEmbed} = require('discord.js');
 
 const client = new Client();
 client.on('ready', () => {
-client.user.setUsername('ZarahBot')
   console.log('I am ready!');
 });
 client.on('message', message => {
