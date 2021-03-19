@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 client.on('message', message => {
 	
-	if (message.content.toLowerCase == 'zarahbot'){
+	if (message.content.toLowerCase() == 'zarahbot'){
 		message.channel.send('yes?')
 	}
 	if (message.content == 'goodnight' || message.content == 'Goodnight' || message.content == 'good night'){
